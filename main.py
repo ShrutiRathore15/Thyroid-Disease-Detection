@@ -3,24 +3,24 @@ import streamlit as st
 import pandas as pd
 import xgboost as xgb
 import numpy as np
-import os
+#import os
 
-path = "/Users/shrut/PycharmProjects/Thyroid Detection"
+#path = "/Users/shrut/PycharmProjects/Thyroid Detection"
 
-start = "/Users/shrut/"
+#start = "/Users/shrut/"
 
-relative_path = os.path.relpath(path, start)
+#relative_path = os.path.relpath(path, start)
  
 
 
 st.header("Thyroid Prediction App")
-data = pd.read_csv(fr'{relative_path}/processed_data.csv')
+data = pd.read_csv("processed_data.csv')
 
 
 
 # load model
 best_xgboost_model = xgb.XGBClassifier()
-best_xgboost_model.load_model(fr'{relative_path}/best_model.json')
+best_xgboost_model.load_model('best_model.json')
 
 if st.checkbox('Show Training Dataframe'):
     data
