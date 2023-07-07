@@ -1,0 +1,5 @@
+streamlit==1.24.0
+numpy==1.24.4
+pandas==2.0.3
+xgboost==1.7.6
+os==1.24.0
