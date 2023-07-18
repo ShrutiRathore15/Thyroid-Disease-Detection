@@ -14,7 +14,7 @@ import numpy as np
 
 
 st.header("Thyroid Prediction App")
-data = pd.read_csv("processed_data.csv')
+data = pd.read_csv('processed_data.csv')
 
 
 
